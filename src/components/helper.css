@@ -1,0 +1,53 @@
+.game {
+    text-align: center;
+    position: relative;
+    display: inline-block; /* Ensures the game container is sized correctly */
+  }
+  
+  h1 {
+    margin-bottom: 20px; /* Ensure enough space between header and banner */
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px; /* Ensure space between banner and board */
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  /* Game Over Styling */
+  .game-over-banner {
+    background-color: rgba(7, 75, 63, 0.8);
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%; /* Ensures the banner spans horizontally */
+    min-width: 586px; /* Limits the banner's width to the game area */
+    margin: 0 auto 20px auto; /* Centers the banner */
+  }
+  
+  .game-over {
+    opacity: 0.5; /* Dim the board when the game is over */
+  }
+  
